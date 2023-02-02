@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.playnoob.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_splashFragment_to_WAWActivity"
+            app:destination="@id/WAWActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.playnoob.ui.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment"
+            />
+        <action
+            android:id="@+id/action_menuFragment_to_shopFragment"
+            app:destination="@id/shopFragment"
+           />
+        <action
+            android:id="@+id/action_menuFragment_to_easyGameFragment"
+            app:destination="@id/easyGameFragment"
+            />
+        <action
+            android:id="@+id/action_menuFragment_to_normalgameFragment"
+            app:destination="@id/normalgameFragment"
+          />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.playnoob.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.playnoob.ui.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_rulesFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.playnoob.ui.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/easyGameFragment"
+        android:name="com.playnoob.ui.EasyGameFragment"
+        android:label="fragment_game_easy"
+        tools:layout="@layout/fragment_gameeasy" >
+        <action
+            android:id="@+id/action_easyGameFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/normalgameFragment"
+        android:name="com.playnoob.ui.NormalgameFragment"
+        android:label="NormalgameFragment" >
+        <action
+            android:id="@+id/action_normalgameFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/WAWActivity"
+        android:name="com.playnoob.ui.WAWActivity"
+        android:label="activity_wawactivity"
+       />
+</navigation>

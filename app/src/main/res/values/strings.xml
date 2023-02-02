@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Wild Adventures</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="exit">Exit</string>
+    <string name="shop">Shop</string>
+    <string name="play">Play</string>
+    <string name="main_menu">Main menu</string>
+    <string name="please_enter_your_name">Please,enter your user name</string>
+    <string name="space" />
+    <string name="submit">Submit</string>
+    <string name="rules">Rules</string>
+    <string name="back">back</string>
+    <string name="_1_go_to_shop_and_buy_attempts">1.Go to shop,and buy attempts</string>
+    <string name="_2_press_play_button_and_then_press_use_attempt_button">2.Press (Play) button,and then press (use attempt) button</string>
+    <string name="_3_rules">3.Choose 3 as you think correct tiles,and click (Accept) button</string>
+    <string name="good_luck">Good luck!</string>
+    <string name="buy_attempt">Buy attempt</string>
+    <string name="spinning_image">Spinning image</string>
+    <string name="use_attempt">use attempt</string>
+    <string name="easy_mode">Easy mode</string>
+    <string name="normal_mode">Normal mode</string>
+    <string name="accept">Accept</string>
+    <string name="strange_tile">strange tile</string>
+</resources>
